@@ -5,6 +5,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>miracle.it</groupId>
+    <developers>
+        <developer>
+            <name>Andrey Volinskiy</name>
+            <email>mamashka2@gmail.com</email>
+            <organization>Miracle-IT</organization>
+        </developer>
+    </developers>
     <artifactId>social.network</artifactId>
     <version>1.0-SNAPSHOT</version>
 

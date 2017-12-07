@@ -1,5 +1,6 @@
 package networks.data;
 
+import networks.model.Group;
 import networks.model.Post;
 import networks.model.User;
 
@@ -33,5 +34,23 @@ public class Database {
         posts[3]=post4;
 
         return posts;
+    }
+
+    public static Group[] getAllGroups() {
+        Group[] groups = new Group[5];
+
+        Group group1 = new Group("I'm hairdresser", "Nataly", "Coloristics", 45);
+        Group group2 = new Group("DragonMania Legends", "NeoSoft", "Game", 1289);
+        Group group3 = new Group("BOS", "Grigoreva", "Scouting", 23);
+        Group group4 = new Group("AC/DC", "Angus Young", "Music ", 30000000);
+        Group group5 = new Group("Miracle IT", "Igor Hnes", "Development", 5);
+
+        groups[0] = group1;
+        groups[1] = group2;
+        groups[2] = group3;
+        groups[3] = group4;
+        groups[4] = group5;
+
+        return groups;
     }
 }
