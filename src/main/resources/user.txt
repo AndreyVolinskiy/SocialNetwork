@@ -1,0 +1,7 @@
+hobby: Chess
+name: Andrey
+username: Lord
+hobby: sflg
+name: 1
+username: 2
+hobby: 3
