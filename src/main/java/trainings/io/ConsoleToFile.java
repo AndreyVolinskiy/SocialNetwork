@@ -34,6 +34,7 @@ public class ConsoleToFile {
                 fileWriter.write(text);
                 fileWriter.write("\n");
             }
+
         }
         scanner.close();
         fileWriter.flush();
