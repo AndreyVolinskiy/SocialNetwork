@@ -11,12 +11,12 @@ public class TranningFiles {
 
     public static void main(String[] args) throws IOException {
 
-        final String filePath = "src\\main\\resources\\file.txt";
-        File file = new File(filePath);
-//        System.out.println(file.getName());
-
-        FileReader reader = new FileReader(file);
-
+//        final String filePath = "src\\main\\resources\\file.txt";
+//        File file = new File(filePath);
+////        System.out.println(file.getName());
+//
+//        FileReader reader = new FileReader(file);
+//
 //        int data;
 //
 //        while ((data = reader.read()) != -1) {
@@ -25,11 +25,16 @@ public class TranningFiles {
 //
 //        FileWriter writer = new FileWriter(file, true);
 //        writer.write("Welcome");
+//
 //        writer.flush();
 //        writer.close();
 //        reader.close();
-
+//
 //        BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
+//
+//
+//
+//
 //        String data;
 //        int count = 0;
 //        while (((data = bufferedReader.readLine()) != null)) {
@@ -38,12 +43,12 @@ public class TranningFiles {
 //        }
 //        System.out.println(count);
 //        bufferedReader.close();
-//
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file, true));
-//        bufferedWriter.write("Hello");
-//        bufferedWriter.flush();
-//
-        Scanner scanner = new Scanner(System.in);
+////
+//        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file, true));
+////        bufferedWriter.write("Hello");
+////        bufferedWriter.flush();
+////
+//        Scanner scanner = new Scanner(System.in);
 //        System.out.println("Enter the line");
 //        String line = scanner.nextLine();
 //        System.out.println(line);
@@ -53,21 +58,21 @@ public class TranningFiles {
 //        System.out.println(number+10);
 //        scanner.close();
 
-        int[] arrayOfInts = new int[10];
-
-        String[] arrayOfStrings = new String[10];
-
-        bufferedWriter.write(Arrays.toString(arrayOfStrings));
-        System.out.println("");
-
-        for (int i = 0; i < arrayOfStrings.length - 1; i++) {
-            arrayOfStrings[i] = "kjsfvk" + i * 4;
-            bufferedWriter.write(arrayOfStrings[i]);
-            bufferedWriter.write("\n");
-
-            bufferedWriter.flush();
-        }
-        System.out.println("");
+//        int[] arrayOfInts = new int[10];
+//
+//        String[] arrayOfStrings = new String[10];
+//
+//        bufferedWriter.write(Arrays.toString(arrayOfStrings));
+//        System.out.println("");
+//
+//        for (int i = 0; i < arrayOfStrings.length - 1; i++) {
+//            arrayOfStrings[i] = "kjsfvk" + i * 4;
+//            bufferedWriter.write(arrayOfStrings[i]);
+//            bufferedWriter.write("\n");
+//
+//            bufferedWriter.flush();
+//        }
+//        System.out.println("");
 //
 //        for (int i = 0; i < arrayOfStrings.length - 1; i++) {
 //            System.out.println("Enter the line");
