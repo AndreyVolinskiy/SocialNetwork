@@ -2,7 +2,7 @@ package trainings.io;
 
 import java.io.*;
 
-public class FileToFile {
+public class FileToFile2 {
 
     public static void main(String[] args) throws IOException {
 
@@ -12,18 +12,18 @@ public class FileToFile {
 
     private static void fromFileToFile() throws IOException {
 
-//        File Reader/Writer
+//      Buffered Reader/Writer
 
-        int text;
+        String s;
         final String fileFrom = "src\\main\\resources\\fromConsole.txt";
         final String fileTo = "src\\main\\resources\\fromFile.txt";
 
-        FileReader reader = new FileReader(fileFrom);
-        FileWriter writer = new FileWriter(fileTo);
+        BufferedReader reader = new BufferedReader(new FileReader(fileFrom));
+        BufferedWriter writer = new BufferedWriter(new FileWriter(fileTo));
 
-        while ((text = reader.read()) != -1) {
-            writer.write((char) text);
-            if (text == ' ') {writer.write("\n");}
+        while ((s = reader.readLine()) != null) {
+            writer.write(s);
+            writer.write("\n");
         }
 
         reader.close();
