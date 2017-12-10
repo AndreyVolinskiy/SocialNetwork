@@ -86,7 +86,7 @@ public class TranningFiles {
 //        task2();
 //        task3();
 //        task4();
-        task6();
+        task5();
     }
 
     private static void write() throws IOException {
@@ -149,37 +149,43 @@ public class TranningFiles {
     }
 
     private  static void task5() throws IOException {
-        String text = "", name, username, hobby;
+        String text, name, username, hobby;
         final String filePath = "src\\main\\resources\\user.txt";
         File file = new File(filePath);
         FileWriter writer = new FileWriter(file, true);
-        String textStop = "Stop";
         Scanner scanner = new Scanner(System.in);
 
-        while (!text.equals(textStop)) {
+        while (true) {
 
             System.out.println("Say Stop to exit!");
             System.out.println("Enter your name:");
             text = scanner.nextLine();
+            if (text.equals("Stop")) {
+                break;
+            }
             name = "name: " + text + "\n";
             writer.write(name);
 
             System.out.println("Enter your username:");
             text = scanner.nextLine();
+            if (text.equals("Stop")) {
+                break;
+            }
             username = "username: " + text + "\n";
             writer.write(username);
 
             System.out.println("Enter your hobby:");
             text = scanner.nextLine();
-
+            if (text.equals("Stop")) {
+                break;
+            }
             hobby = "hobby: " + text + "\n";
             writer.write(hobby);
-
-            writer.flush();
-
-            scanner.close();
-            writer.close();
+            writer.write("\n");
         }
+        writer.flush();
+        scanner.close();
+        writer.close();
     }
 
     private static void task6() {

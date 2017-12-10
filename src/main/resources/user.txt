@@ -1,7 +1,19 @@
-hobby: Chess
+
+
+
 name: Andrey
 username: Lord
-hobby: sflg
+hobby: hockey
+
+name: Naskya
+username: DragonSlayer
+hobby: karate
+
 name: 1
 username: 2
 hobby: 3
+
+name: 4
+username: 5
+hobby: 6
+
