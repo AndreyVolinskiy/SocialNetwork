@@ -1,6 +1,7 @@
 package trainings.Collections;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Random;
 
 public class List {
@@ -9,13 +10,27 @@ public class List {
 
         Random random = new Random(100);
         ArrayList<Integer> arrayList = new ArrayList<>();
+        ArrayList<Integer> newArrayList = new ArrayList<>();
         for (int i = 0; i < 20; i++) {
             arrayList.add(random.nextInt(100));
         }
-        for (int elem: arrayList) {
-            System.out.print(elem +"  ");
+
+        arrayList.forEach(n -> System.out.print(n + " "));
+        System.out.println("");
+
+        Iterator<Integer> iterator = arrayList.iterator();
+        while (iterator.hasNext()) {
+            int number = iterator.next();
+            if (number % 2 == 0) {
+                newArrayList.add(number);
+            } else {
+                iterator.remove();
+            }
+
         }
-        arrayList.clear();
-        System.out.println("\n" + "List cleared.");
+        System.out.println(arrayList);
+        System.out.println(newArrayList);
+
+
     }
 }

@@ -61,6 +61,7 @@ public class EvenAndOddStrings {
         reader.close();
         oddWriter.flush();
         oddWriter.close();
+
         evenWriter.flush();
         evenWriter.close();
     }

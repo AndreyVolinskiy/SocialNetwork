@@ -1,5 +1,7 @@
 package networks.model;
 
+import networks.data.Database;
+
 public class User {
 
     private String name;
@@ -13,6 +15,10 @@ public class User {
     }
 
     public User() {
+    }
+
+    public static User getFirst() {
+        return Database.getAllUsers().get(0);
     }
 
     public int getAge() {
