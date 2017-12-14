@@ -12,6 +12,7 @@ import java.util.List;
 public class Database {
 
     public static List<User> getAllUsers() {
+
         List<User> userList = new LinkedList<>();
 
         User user1 = new User("Andrey", "123456", 34);
@@ -23,10 +24,6 @@ public class Database {
 
         return userList;
     }
-
-
-
-
     public static List<Post> getAllPosts() {
 
         Post post1 = new Post("Football", "About football", 256);
@@ -42,7 +39,6 @@ public class Database {
 
         return postList;
     }
-
     public static List<Group> getAllGroups() {
 
         Group group1 = new Group("I'm hairdresser", "Nataly", "Coloristics", 45);
@@ -52,11 +48,13 @@ public class Database {
         Group group5 = new Group("Miracle IT", "Igor Hnes", "Development", 5);
 
         List<Group> groupList = new LinkedList<>();
+
         groupList.add(group1);
         groupList.add(group2);
         groupList.add(group3);
         groupList.add(group4);
         groupList.add(group5);
+
         return groupList;
     }
 }
