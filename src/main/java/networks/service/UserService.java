@@ -1,7 +1,6 @@
 package networks.service;
 
 import networks.dao.UserDao;
-import networks.data.Database;
 import networks.model.User;
 
 import java.util.List;
@@ -28,7 +27,7 @@ public class UserService {
         return userDao.getByName(name);
     }
 
-    public User getByAge(int age) {
+    public List<User> getByAge(int age) {
         UserDao userDao = new UserDao();
         return userDao.getByAge(age);
     }

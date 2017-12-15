@@ -28,25 +28,23 @@ public class UserDao {
         List<User> tempUserList = new LinkedList<User>() {};
         List<User> userList = Database.getAllUsers();
         for (User user : userList) {
-            if (user.getName().equals(name)) {
-                System.out.println("User by name:");
+            if (name.equals(user.getName())) {
                 tempUserList.add(user);
-                if (tempUserList.size() == 0) {
-                    throw new NoFoundUserException();
-                }
-                return tempUserList;
             }
         }
-        return null;
+        if (tempUserList.size() == 0) {
+            throw new NoFoundUserException();
+        }
+        return tempUserList;
     }
 
-    public User getByAge(int age) {
-        User tempUser = null;
+    public List<User> getByAge(int age) {
+        List<User> tempUser = new LinkedList<>();
         List<User> userList = Database.getAllUsers();
         for (User user : userList) {
             if (user.getAge() == age) {
                 System.out.println("User by age:");
-                tempUser = user;
+                tempUser.add(user);
             }
         }
         return tempUser;
