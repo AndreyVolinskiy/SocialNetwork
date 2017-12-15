@@ -1,8 +1,10 @@
 package networks.dao;
 
+import networks.Exception.NoFoundUserException;
 import networks.data.Database;
 import networks.model.User;
 
+import java.util.LinkedList;
 import java.util.List;
 
 public class UserDao {
@@ -22,16 +24,20 @@ public class UserDao {
         return Database.getAllUsers().get(size);
     }
 
-    public User getByName(String name) {
-        User tempUser = null;
+    public List<User> getByName(String name) {
+        List<User> tempUserList = new LinkedList<User>() {};
         List<User> userList = Database.getAllUsers();
         for (User user : userList) {
             if (user.getName().equals(name)) {
                 System.out.println("User by name:");
-                tempUser = user;
+                tempUserList.add(user);
+                if (tempUserList.size() == 0) {
+                    throw new NoFoundUserException();
+                }
+                return tempUserList;
             }
         }
-        return tempUser;
+        return null;
     }
 
     public User getByAge(int age) {

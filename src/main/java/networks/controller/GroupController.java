@@ -1,5 +1,6 @@
 package networks.controller;
 
+import networks.Exception.NoGroupFoundException;
 import networks.model.Group;
 import networks.service.GroupService;
 
@@ -13,6 +14,10 @@ public class GroupController {
         List<Group> groups = groupService.getAll();
         for (Group elem : groups) {
             System.out.println(elem);
+        }
+
+        if (true) {
+            throw new NoGroupFoundException();
         }
     }
 }

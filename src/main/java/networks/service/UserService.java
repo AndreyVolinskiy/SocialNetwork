@@ -23,7 +23,7 @@ public class UserService {
         return userDao.getLast();
     }
 
-    public User getByName(String name) {
+    public List<User> getByName(String name) {
         UserDao userDao = new UserDao();
         return userDao.getByName(name);
     }

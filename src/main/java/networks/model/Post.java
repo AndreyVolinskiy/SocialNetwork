@@ -1,5 +1,7 @@
 package networks.model;
 
+import java.util.Objects;
+
 public class Post {
 
     private String title;
@@ -44,4 +46,5 @@ public class Post {
                 ", countOfLikes=" + countOfLikes +
                 '}';
     }
+
 }

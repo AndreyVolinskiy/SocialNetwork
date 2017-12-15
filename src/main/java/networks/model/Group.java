@@ -14,7 +14,7 @@ public class Group {
         this.numberOfFollowers = numberOfFollowers;
     }
 
-    public String getNameOfGroup() {
+    public String getByNameOfGroup() {
         return nameOfGroup;
     }
 

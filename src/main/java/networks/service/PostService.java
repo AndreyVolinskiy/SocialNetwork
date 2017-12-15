@@ -15,6 +15,10 @@ public class PostService {
 
     }
 
+    public List<Post> getByTitle(String name) {
+        PostDao postDao = new PostDao();
+        return postDao.getByTitle(name);
+    }
 
     }
 
