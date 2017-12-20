@@ -2,6 +2,7 @@ package networks.controller;
 
 import networks.model.Group;
 import networks.service.GroupService;
+import networks.service.impl.GroupServiceImpl;
 
 import java.util.List;
 
@@ -9,7 +10,7 @@ public class GroupController {
 
     public static void main(String[] args) {
 
-        GroupService groupService = new GroupService();
+        GroupService groupService = new GroupServiceImpl();
 
         List<Group> groups = groupService.getAll();
         for (Group elem : groups) {

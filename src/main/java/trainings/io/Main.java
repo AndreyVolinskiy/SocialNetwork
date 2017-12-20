@@ -1,4 +1,4 @@
-package trainings;
+package trainings.io;
 
 public class Main {
 

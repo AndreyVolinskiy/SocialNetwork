@@ -2,37 +2,30 @@ package networks.controller;
 
 import networks.model.User;
 import networks.service.UserService;
+import networks.service.impl.UserServiceImpl;
 
-import java.util.List;
+import java.time.LocalDate;
 
 public class UserController {
 
     public static void main(String[] args) {
 
-        UserService userService = new UserService();
-        List<User> users = userService.getAll();
-        for (User elem : users) {
-            System.out.println(elem);
-        }
-        System.out.println("");
+        UserService userService = new UserServiceImpl();
+        User first = userService.getFirst();
+
+        String newPassword = "sjdhbvkj";
+
+//        userService.changePassword(first, newPassword);
+
+        User user = new User();
+        user.setName("Alex");
+        user.setEmail("mamashka2@gmail.com");
+        user.setBirthday(LocalDate.now());
 
 
-        User userFirst = userService.getFirst();
-        System.out.println(userFirst);
-        System.out.println("");
+        LocalDate now = LocalDate.now();
+        userService.happyBirthday(user);
 
-        User userLast = userService.getLast();
-        System.out.println(userLast);
-        System.out.println("");
-
-
-        List<User> userByName = userService.getByName("Olga");
-        for (User user : userByName) {
-            System.out.println(user);
-        }
-        List<User> userByAge = userService.getByAge(25);
-        System.out.println(userByAge);
-        System.out.println("");
 
 
     }

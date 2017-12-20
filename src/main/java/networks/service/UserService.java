@@ -1,34 +1,22 @@
 package networks.service;
 
-import networks.dao.UserDao;
 import networks.model.User;
 
 import java.util.List;
 
-public class UserService {
+public interface UserService {
 
-    public List<User> getAll() {
-        UserDao userDao = new UserDao();
-        return userDao.getAll();
-    }
+    List<User> getAll();
 
-    public User getFirst() {
-        UserDao userDao = new UserDao();
-        return userDao.getFirst();
-    }
+    User getFirst();
 
-    public User getLast() {
-        UserDao userDao = new UserDao();
-        return userDao.getLast();
-    }
+    User getLast();
 
-    public List<User> getByName(String name) {
-        UserDao userDao = new UserDao();
-        return userDao.getByName(name);
-    }
+    List<User> getByName(String name);
 
-    public List<User> getByAge(int age) {
-        UserDao userDao = new UserDao();
-        return userDao.getByAge(age);
-    }
+    List<User> getByAge(int age);
+
+    void changePassword(User user, String newPassword);
+
+    void happyBirthday(User user);
 }

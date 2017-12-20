@@ -1,22 +1,14 @@
 package networks.service;
 
-import networks.dao.PostDao;
 import networks.model.Post;
 
 import java.util.List;
 
-public class PostService {
+public interface PostService {
 
-    public List<Post> getAll() {
-        PostDao postDao = new PostDao();
-        return postDao.getAll();
+    List<Post> getAll();
 
-    }
-
-    public List<Post> getByTitle(String name) {
-        PostDao postDao = new PostDao();
-        return postDao.getByTitle(name);
-    }
+    List<Post> getByTitle(String name);
 
     }
 
