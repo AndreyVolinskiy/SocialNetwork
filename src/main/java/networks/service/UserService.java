@@ -2,6 +2,7 @@ package networks.service;
 
 import networks.model.User;
 
+import java.time.LocalDate;
 import java.util.List;
 
 public interface UserService {
@@ -18,5 +19,5 @@ public interface UserService {
 
     void changePassword(User user, String newPassword);
 
-    void happyBirthday(User user);
+    void happyBirthday(User user, LocalDate localDate);
 }

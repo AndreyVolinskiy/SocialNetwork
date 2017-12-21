@@ -8,6 +8,6 @@ public class HappyBirthdayBuilder implements MessageBuilder
     public String build(User user) {
         return " Dear "
                 + user.getName()
-                + " congrats you with your birthday, Health, Wealth and Happyness!";
+                + " , congrats you with your birthday, Health, Wealth and Happiness!";
     }
 }

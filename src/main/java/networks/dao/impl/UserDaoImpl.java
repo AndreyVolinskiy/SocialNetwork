@@ -16,14 +16,14 @@ public class UserDaoImpl implements UserDao {
 
     @Override
     public User getFirst() {
-        System.out.println("The first user is:");
+//        System.out.println("The first user is:");
         return Database.getAllUsers().get(0);
     }
 
     @Override
     public User getLast() {
         int size = Database.getAllUsers().size() - 1;
-        System.out.println("The last user is:");
+//        System.out.println("The last user is:");
         return Database.getAllUsers().get(size);
     }
 

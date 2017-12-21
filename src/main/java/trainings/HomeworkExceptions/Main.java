@@ -7,25 +7,24 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("Enter an URL with https://, please:");
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter URL protocol, please:");
+        String protocol = scanner.nextLine();
+        System.out.println("Enter domain name, please:");
         String site = scanner.nextLine();
-        check(site);
+        Url url = new Url(protocol, site);
+
+        System.out.println(url);
+
+        check(url);
+
         scanner.close();
     }
 
-    private static void check(String url) {
+    private static void check(Url url) {
 
-        final String URL = "https://";
-        List<String> goodSites = Database.getAllGoodSites();
-        List<String> badSites = Database.getAllBadSites();
-        String subString;
-
-        try {
-            subString = url.substring(0, 8);
-        } catch (StringIndexOutOfBoundsException | NullPointerException e) {
-            subString = null;
-        }
+        List<Url> goodSites = Database.getAllGoodSites();
+        List<Url> badSites = Database.getAllBadSites();
 
         if (url == null) {
             try {
@@ -35,15 +34,15 @@ public class Main {
             }
         } else
 
-            if (!URL.equals(subString)) {
-                try {
-                    throw new Exceptions.NoProtocolException();
-                } catch (Exceptions.NoProtocolException e) {
-                    System.out.println("Entered not https:// url.");
-                }
-            } else
+        if (!url.getProtocol().equals("https://")) {
+            try {
+                throw new Exceptions.NoProtocolException();
+            } catch (Exceptions.NoProtocolException e) {
+                System.out.println("Entered not https:// url.");
+            }
+        } else
 
-        for (String site : badSites) {
+        for (Url site : badSites) {
             if (site.equals(url)) {
                 try {
                     throw new Exceptions.BadSitesException();
@@ -51,16 +50,15 @@ public class Main {
                     System.out.println("This site is very, very bad...");
                 }
             } else {
-                if (!site.equals(url)) {
-                    goodSites.add(url);
-                    System.out.println("List of good sites:");
-                    System.out.println(goodSites);
-                    break;
-
-                }
+                goodSites.add(url);
             }
         }
+        System.out.println("List of good sites:");
+        System.out.println(goodSites);
+
     }
 }
+
+
 
 

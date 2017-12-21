@@ -8,16 +8,15 @@ public class User {
     private String email;
     private String password;
     private int age;
+    private LocalDate birthday;
+
 
     public LocalDate getBirthday() {
         return birthday;
     }
-
     public void setBirthday(LocalDate birthday) {
         this.birthday = birthday;
     }
-
-    private LocalDate birthday;
 
     public User(String name, String email, String password, int age) {
         this.email = email;
@@ -65,8 +64,11 @@ public class User {
     public String toString() {
         return "User{" +
                 "name='" + name + '\'' +
+                ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 ", age=" + age +
+                ", birthday=" + birthday +
                 '}';
+
     }
 }

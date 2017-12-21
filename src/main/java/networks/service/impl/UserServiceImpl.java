@@ -53,13 +53,14 @@ public class UserServiceImpl implements UserService{
         }
 
     @Override
-    public void happyBirthday(User user) {
-        if (user.getBirthday().equals(LocalDate.now())) {
+    public void happyBirthday(User user, LocalDate localDate) {
+        if (localDate.getMonth() == user.getBirthday().getMonth() && localDate.getDayOfMonth() == user.getBirthday().getDayOfMonth())  {
             MessageBuilder builder = new HappyBirthdayBuilder();
             String message = builder.build(user);
             MessageService messageService = new MessageServiceImpl();
             messageService.sendMessage(message, user.getEmail());
-        } else
+        }
+//        else
 
     }
 

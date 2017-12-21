@@ -5,19 +5,19 @@ import java.util.List;
 
 class Database {
 
-    static List<String> getAllGoodSites() {
+    static List<Url> getAllGoodSites() {
 
 
-        List<String> goodSites = new LinkedList<>();
+        List<Url> goodSites = new LinkedList<>();
 
-        String site0 = "https://mail.google.com";
-        String site1 = "https://google.com.ua";
-        String site2 = "https://dropbox.com";
-        String site3 = "https://facebook.com";
-        String site4 = "https://my.best.net.ua";
-        String site5 = "https://eu.battle.net";
-        String site6 = "https://translate.google.com.ua";
-        String site7 = "https://privat24.ua";
+        Url site0 = new Url("https://", "mail.google.com");
+        Url site1 = new Url("https://", "google.com.ua");
+        Url site2 = new Url("https://", "facebook.com");
+        Url site3 = new Url("https://", "my.best.net.ua");
+        Url site4 = new Url("https://", "eu.battle.net");
+        Url site5 = new Url("https://", "translate.google.com.ua");
+        Url site6 = new Url("https://", "translate.google.com.ua");
+        Url site7 = new Url("https://", "privat24.ua");
 
         goodSites.add(site0);
         goodSites.add(site1);
@@ -31,18 +31,18 @@ class Database {
         return goodSites;
     }
 
-    static List<String> getAllBadSites() {
+    static List<Url> getAllBadSites() {
 
-        List<String> badSites = new LinkedList<>();
+        List<Url> badSites = new LinkedList<>();
 
-        String site0 = "https://online.pumb.ua";
-        String site1 = "https://fishki.net";
-        String site2 = "http://kinozal.tv";
-        String site3 = "http://megogo.net";
-        String site4 = "http://divan.tv";
-        String site5 = "https://miracle-it-experience.slack.com";
-        String site6 = "https://irista.com";
-        String site7 = "https://blablacar.com.ua/";
+        Url site0 = new Url("https://", "online.pumb.ua");
+        Url site1 = new Url("https://", "fishki.net");
+        Url site2 = new Url("https://", "http://kinozal.tv");
+        Url site3 = new Url("https://", "megogo.net");
+        Url site4 = new Url("https://", "divan.tv");
+        Url site5 = new Url("https://", "miracle-it-experience.slack.com");
+        Url site6 = new Url("https://", "irista.com");
+        Url site7 = new Url("https://", "blablacar.com.ua");
 
         badSites.add(site0);
         badSites.add(site1);
