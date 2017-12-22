@@ -13,6 +13,7 @@ public class EmailConfig {
         javaMailSender.setHost("smtp.gmail.com");
         javaMailSender.setPort(PORT);
         javaMailSender.setUsername("summerjava570@gmail.com");
+
         javaMailSender.setPassword("Cryptography");
         javaMailSender.getJavaMailProperties().setProperty("mail.smtp.auth", "true");
         javaMailSender.getJavaMailProperties().setProperty("mail.smtp.starttls.enable", "true");
