@@ -7,7 +7,7 @@ public class RegistrationBuilder implements MessageBuilder {
     public String build(User user) {
         return " Dear "
                 + user.getName()
-                + " We are glad to see you with us!";
+                + " You are registered. We are glad to see you with us!";
 
     }
 }

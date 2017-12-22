@@ -17,12 +17,14 @@ public class UserController {
 //        userService.changePassword(first, newPassword);
 
 
-        LocalDate birthday = LocalDate.of(1981, 12, 22);
-        first.setBirthday(birthday);
-        LocalDate now = LocalDate.now();
+//        LocalDate birthday = LocalDate.of(1981, 12, 22);
+//        first.setBirthday(birthday);
+//        LocalDate now = LocalDate.now();
+//
+//        userService.happyBirthday(first, now);
 
-        userService.happyBirthday(first, now);
 
+        userService.create(first);
 
     }
 

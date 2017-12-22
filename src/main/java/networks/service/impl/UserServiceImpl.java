@@ -8,6 +8,7 @@ import networks.service.UserService;
 import networks.service.email.HappyBirthdayBuilder;
 import networks.service.email.MessageBuilder;
 import networks.service.email.RecoverPasswordBuilder;
+import networks.service.email.RegistrationBuilder;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -62,6 +63,14 @@ public class UserServiceImpl implements UserService{
         }
 //        else
 
+    }
+
+    @Override
+    public void create(User user) {
+        MessageBuilder builder = new RegistrationBuilder();
+        String message = builder.build(user);
+        MessageService messageService = new MessageServiceImpl();
+        messageService.sendMessage(message, user.getEmail());
     }
 
 

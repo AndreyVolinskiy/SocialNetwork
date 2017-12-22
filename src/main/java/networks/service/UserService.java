@@ -20,4 +20,6 @@ public interface UserService {
     void changePassword(User user, String newPassword);
 
     void happyBirthday(User user, LocalDate localDate);
+
+    void create(User user);
 }
