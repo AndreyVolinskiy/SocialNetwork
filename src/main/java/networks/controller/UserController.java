@@ -14,17 +14,11 @@ public class UserController {
         User first = userService.getFirst();
 
 //        String newPassword = "sjdhbvkj";
-
 //        userService.changePassword(first, newPassword);
-//
-//        User user = new User();
-//        user.setName("Alex");
-//        user.setEmail("mamashka2@gmail.com");
 
 
-        LocalDate birthday = LocalDate.of(1981, 12, 21);
+        LocalDate birthday = LocalDate.of(1981, 12, 22);
         first.setBirthday(birthday);
-
         LocalDate now = LocalDate.now();
 
         userService.happyBirthday(first, now);

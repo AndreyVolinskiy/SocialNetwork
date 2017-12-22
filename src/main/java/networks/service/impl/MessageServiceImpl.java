@@ -9,10 +9,9 @@ public class MessageServiceImpl implements MessageService {
     @Override
     public void sendMessage(String text, String to) {
 
-
         SimpleMailMessage simpleMessage = new SimpleMailMessage();
         simpleMessage.setTo(to);
-        simpleMessage.setSubject("Advertising");
+        simpleMessage.setSubject("Happy birthday");
         simpleMessage.setText(text);
 
         JavaMailSenderImpl mailSender = EmailConfig.mailSender();
