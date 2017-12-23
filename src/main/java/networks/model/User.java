@@ -7,12 +7,20 @@ public class User {
     private String name;
     private String email;
     private String password;
+    private String status;
     private int age;
     private LocalDate birthday;
 
-
     public LocalDate getBirthday() {
         return birthday;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
     public void setBirthday(LocalDate birthday) {
         this.birthday = birthday;
