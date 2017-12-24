@@ -2,19 +2,14 @@ package networks.service.impl;
 
 import networks.dao.UserDao;
 import networks.dao.factory.DaoFactory;
-import networks.dao.impl.UserDaoImpl;
 import networks.model.User;
 import networks.service.MessageService;
 import networks.service.UserService;
 import networks.service.email.HappyBirthdayBuilder;
 import networks.service.email.MessageBuilder;
 import networks.service.email.RecoverPasswordBuilder;
-import networks.service.email.RegistrationBuilder;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -110,6 +105,15 @@ public class UserServiceImpl implements UserService{
             textBytes[i] = (byte) (textBytes[i] - keyOfDecription);
         }
         return new String(textBytes);
+    }
+
+    @Override
+    public void getAllFromFile(File file) throws IOException {
+        String text;
+        BufferedReader reader = new BufferedReader(new FileReader(file));
+        while ((text = reader.readLine())!=null) {
+            System.out.println(text);
+        }
     }
 
 

@@ -2,6 +2,8 @@ package networks.service;
 
 import networks.model.User;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.util.List;
@@ -27,4 +29,6 @@ public interface UserService {
     String encrypt(String strirg);
 
     String decrypt(String strirg);
+
+    void getAllFromFile(File file) throws IOException;
 }

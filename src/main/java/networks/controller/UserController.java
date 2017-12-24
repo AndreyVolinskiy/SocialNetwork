@@ -7,6 +7,7 @@ import networks.service.factory.ServiceFactory;
 import networks.service.impl.UserServiceImpl;
 import networks.util.Status;
 
+import java.io.File;
 import java.io.IOException;
 import java.time.LocalDate;
 
@@ -30,11 +31,13 @@ public class UserController {
             e.printStackTrace();
         }
 
-
-
-
-
-
+        String filePath = "src\\main\\resources\\users.txt";
+        File file = new File(filePath);
+        try {
+            userService.getAllFromFile(file);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
 
 //        String newPassword = "sjdhbvkj";
