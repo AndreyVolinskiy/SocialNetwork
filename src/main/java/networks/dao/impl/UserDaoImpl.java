@@ -1,6 +1,6 @@
 package networks.dao.impl;
 
-import networks.Exception.NoFoundUserException;
+import networks.Exception.NoUserFoundException;
 import networks.dao.UserDao;
 import networks.data.Database;
 import networks.model.User;
@@ -16,14 +16,12 @@ public class UserDaoImpl implements UserDao {
 
     @Override
     public User getFirst() {
-//        System.out.println("The first user is:");
         return Database.getAllUsers().get(0);
     }
 
     @Override
     public User getLast() {
         int size = Database.getAllUsers().size() - 1;
-//        System.out.println("The last user is:");
         return Database.getAllUsers().get(size);
     }
 
@@ -37,7 +35,7 @@ public class UserDaoImpl implements UserDao {
             }
         }
         if (tempUserList.size() == 0) {
-            throw new NoFoundUserException();
+            throw new NoUserFoundException();
         }
         return tempUserList;
     }

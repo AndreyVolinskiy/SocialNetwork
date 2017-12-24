@@ -7,6 +7,7 @@ import networks.service.factory.ServiceFactory;
 import networks.service.impl.UserServiceImpl;
 import networks.util.Status;
 
+import java.io.IOException;
 import java.time.LocalDate;
 
 public class UserController {
@@ -15,19 +16,30 @@ public class UserController {
 
         UserService userService = ServiceFactory.getUserService();
         User first = userService.getFirst();
-//        ServiceFactory.getUserService().create(first);
 
-        System.out.println(DaoFactory.getUserDao().getAll());
-//        first.setStatus(Status.SINGLE);
+
+        first.setStatus(Status.MARRIED);
+        LocalDate birthday = LocalDate.of(1981, 1, 19);
+        first.setBirthday(birthday);
+
+        try {
+            for (User user : userService.getAll()) {
+                ServiceFactory.getUserService().create(user);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+
+
+
+
+
 
 //        String newPassword = "sjdhbvkj";
 //        userService.changePassword(first, newPassword);
-
-
-//        LocalDate birthday = LocalDate.of(1981, 12, 22);
-//        first.setBirthday(birthday);
 //        LocalDate now = LocalDate.now();
-//
 //        userService.happyBirthday(first, now);
 
 

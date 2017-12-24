@@ -1,5 +1,7 @@
 package networks.model;
 
+import networks.util.Status;
+
 import java.time.LocalDate;
 
 public class User {
@@ -7,7 +9,7 @@ public class User {
     private String name;
     private String email;
     private String password;
-    private String status;
+    private Status status;
     private int age;
     private LocalDate birthday;
 
@@ -15,14 +17,24 @@ public class User {
         return birthday;
     }
 
-    public String getStatus() {
+    public Status getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(Status status) {
         this.status = status;
     }
+
     public void setBirthday(LocalDate birthday) {
+        this.birthday = birthday;
+    }
+
+    public User(String name, String email, String password, Status status, int age, LocalDate birthday) {
+        this.name = name;
+        this.email = email;
+        this.password = password;
+        this.status = status;
+        this.age = age;
         this.birthday = birthday;
     }
 
@@ -33,8 +45,7 @@ public class User {
         this.age = age;
     }
 
-    public User() {
-    }
+    public User() {}
 
     public int getAge() {
         return age;

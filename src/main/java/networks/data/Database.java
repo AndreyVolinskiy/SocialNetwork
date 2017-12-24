@@ -15,12 +15,12 @@ public class Database {
 
         List<User> userList = new LinkedList<>();
 
-        User user1 = new User("Andrey", "mamashka236@gmail.com", "123456", 34);
-        User user2 = new User("Alex","", "654321", 25);
-        User user3 = new User("Olga","" ,"555555", 55);
-        User user4 = new User("Olga", "", "555555", 54);
-        User user5 = new User("Olga", "", "555555", 53);
-        User user6 = new User("Olga", "", "555555", 52);
+        User user1 = new User("Andrey", "mamashka236@gmail.com", "qwerty", 34);
+        User user2 = new User("Alex","qwerty@gmail.com", "654321", 25);
+        User user3 = new User("Igor","miracleIT@gmail.com" ,"ksjshdif", 55);
+        User user4 = new User("Bob", "i@i.ua", "kjhef87", 54);
+        User user5 = new User("Rob", "gorilla@ukr.net", "lkfoi1346", 53);
+        User user6 = new User("Nastya", "nastya@gmail.com", "jhef654", 52);
         userList.add(user1);
         userList.add(user2);
         userList.add(user3);

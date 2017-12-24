@@ -11,6 +11,7 @@ import networks.service.email.MessageBuilder;
 import networks.service.email.RecoverPasswordBuilder;
 import networks.service.email.RegistrationBuilder;
 
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -71,28 +72,54 @@ public class UserServiceImpl implements UserService{
 
 
     @Override
-    public void create(User user) {
-        String usersPath = "src\\main\\resources\\users.txt";
-        File file = new File(usersPath);
-        try {
-            file.createNewFile();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        try {
-            FileWriter writer = new FileWriter(file, true);
-        } catch (IOException e) {
-            e.printStackTrace();
+    public void create(User user) throws IOException {
+        String filePath = "src\\main\\resources\\users.txt";
+        File file = new File(filePath);
+//        file.delete();
+//        file.createNewFile();
+        BufferedWriter writer = new BufferedWriter(new FileWriter(file, true));
+
+        writer.write("1. Name: " + user.getName() + "\n");
+        writer.write("2. Email: " + user.getEmail() + "\n");
+        writer.write("3. Password: " + encrypt(user.getPassword()) + "\n");
+        writer.write("4. Age: " + user.getAge() + "\n");
+        writer.write("5. Status: " + user.getStatus() + "\n");
+        writer.write("6. Birthday: " + user.getBirthday() + "\n");
+        writer.write("\n\n");
+
+        writer.flush();
+        writer.close();
+
         }
 
+    @Override
+    public String encrypt (String text) {
+        final int keyOfEncription = 3;
+        byte[] textBytes = text.getBytes();
+        for (int i = 0; i < textBytes.length; i++) {
+            textBytes[i] = (byte) (textBytes[i] + keyOfEncription);
+        }
+        return new String(textBytes);
+    }
+
+    @Override
+    public String decrypt(String text) {
+        final int keyOfDecription = 3;
+        byte[] textBytes = text.getBytes();
+        for (int i = 0; i < textBytes.length; i++) {
+            textBytes[i] = (byte) (textBytes[i] - keyOfDecription);
+        }
+        return new String(textBytes);
+    }
 
 
 //    public void create(User user) {
 //        MessageBuilder builder = new RegistrationBuilder();
-//        String message = builder.build(user);
-//        MessageService messageService = new MessageServiceImpl();
-//        messageService.sendMessage(message, user.getEmail());
-    }}
+////        String message = builder.build(user);
+////        MessageService messageService = new MessageServiceImpl();
+////        messageService.sendMessage(message, user.getEmail());
+    }
+
 
 
 
