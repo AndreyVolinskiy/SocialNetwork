@@ -6,10 +6,7 @@ import networks.dao.impl.GroupDaoImpl;
 import networks.model.Group;
 import networks.service.GroupService;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.List;
 
 public class GroupServiceImpl implements GroupService {
@@ -37,11 +34,21 @@ public class GroupServiceImpl implements GroupService {
         writer.write("2. Admin: " + group.getAdmin() + "\n");
         writer.write("3. Description: " + group.getDescription() + "\n");
         writer.write("3. Number of followers: " + group.getNumberOfFollowers() + "\n");
-        writer.write("\n\n");
+        writer.write("\n");
 
         writer.flush();
         writer.close();
 
+    }
+
+    @Override
+    public void getAllFromFile(File file) throws IOException {
+        String text;
+        BufferedReader reader = new BufferedReader(new FileReader(file));
+        while ((text = reader.readLine())!=null) {
+            System.out.println(text);
+        }
+        reader.close();
     }
 }
 

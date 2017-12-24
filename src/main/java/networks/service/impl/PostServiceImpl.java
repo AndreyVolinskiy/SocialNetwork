@@ -6,10 +6,7 @@ import networks.dao.impl.PostDaoImpl;
 import networks.model.Post;
 import networks.service.PostService;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.List;
 
 public class PostServiceImpl implements PostService {
@@ -36,10 +33,21 @@ public class PostServiceImpl implements PostService {
         writer.write("1. Title: " + post.getTitle() + "\n");
         writer.write("2. Description: " + post.getDescription() + "\n");
         writer.write("3. Count of likes: " + post.getCountOfLikes() + "\n");
-        writer.write("\n\n");
+        writer.write("\n");
 
         writer.flush();
         writer.close();
+
+    }
+
+    @Override
+    public void getAllFromFile(File file) throws IOException {
+        String text;
+        BufferedReader reader = new BufferedReader(new FileReader(file));
+        while ((text = reader.readLine())!=null) {
+            System.out.println(text);
+        }
+        reader.close();
 
     }
 

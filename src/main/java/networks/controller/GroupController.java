@@ -5,6 +5,7 @@ import networks.service.GroupService;
 import networks.service.factory.ServiceFactory;
 import networks.service.impl.GroupServiceImpl;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
@@ -18,6 +19,10 @@ public class GroupController {
         for (Group elem : groups) {
             groupService.create(elem);
         }
+
+        String filePath = "src\\main\\resources\\groups.txt";
+        File file = new File(filePath);
+        groupService.getAllFromFile(file);
 
     }
 }

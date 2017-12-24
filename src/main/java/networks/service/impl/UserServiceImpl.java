@@ -80,7 +80,7 @@ public class UserServiceImpl implements UserService{
         writer.write("4. Age: " + user.getAge() + "\n");
         writer.write("5. Status: " + user.getStatus() + "\n");
         writer.write("6. Birthday: " + user.getBirthday() + "\n");
-        writer.write("\n\n");
+        writer.write("\n");
 
         writer.flush();
         writer.close();

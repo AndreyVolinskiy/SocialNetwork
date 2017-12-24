@@ -6,6 +6,7 @@ import networks.service.factory.ServiceFactory;
 import networks.service.impl.PostServiceImpl;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
@@ -21,6 +22,11 @@ public class PostController {
         for (Post elem : posts) {
             postService.create(elem);
         }
+
+
+        String filePath = "src\\main\\resources\\posts.txt";
+        File file = new File(filePath);
+        postService.getAllFromFile(file);
 
     }
 
