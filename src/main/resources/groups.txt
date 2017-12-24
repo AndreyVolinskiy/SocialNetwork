@@ -1,0 +1,48 @@
+1. Name of group: I'm hairdresser
+2. Admin: Nataly
+3. Description: Coloristics
+3. Number of followers: 45
+
+
+1. Name of group: DragonMania Legends
+2. Admin: NeoSoft
+3. Description: Game
+3. Number of followers: 1289
+
+
+1. Name of group: BOS
+2. Admin: Grigoreva
+3. Description: Scouting
+3. Number of followers: 23
+
+
+1. Name of group: AC/DC
+2. Admin: Angus Young
+3. Description: Music 
+3. Number of followers: 30000000
+
+
+1. Name of group: Miracle IT
+2. Admin: Igor Hnes
+3. Description: Development
+3. Number of followers: 5
+
+
+1. Name of group: BOS
+2. Admin: Grigoreva
+3. Description: Scouting
+3. Number of followers: 23
+
+
+1. Name of group: BOS
+2. Admin: Grigoreva
+3. Description: Scouting
+3. Number of followers: 23
+
+
+1. Name of group: BOS
+2. Admin: Grigoreva
+3. Description: Scouting
+3. Number of followers: 23
+
+
