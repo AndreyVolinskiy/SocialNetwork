@@ -114,6 +114,7 @@ public class UserServiceImpl implements UserService{
         while ((text = reader.readLine())!=null) {
             System.out.println(text);
         }
+        reader.close();
     }
 
 
