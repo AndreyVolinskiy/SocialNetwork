@@ -4,7 +4,7 @@ public class BeerService {
 
     public static void main(String[] args) {
 
-        Beer beer = check(BeerType.KRONENBERG);
+        Beer beer = check(BeerType.KRONENBOURG);
         assert beer != null;
         beer.drink();
     }
@@ -14,7 +14,7 @@ public class BeerService {
         switch (beerType) {
             case OBOLON:
                 return new Obolon();
-            case KRONENBERG:
+            case KRONENBOURG:
                 return new Kronenberg();
         }
         return null;
