@@ -19,7 +19,7 @@ public class GroupDaoImpl implements GroupDao {
         List<Group> tempGroup = new LinkedList<>();
         List<Group> groupList = Database.getAllGroups();
         for (Group group : groupList) {
-            if (group.getByNameOfGroup().equals(name)) {
+            if (group.getNameOfGroup().equals(name)) {
                 tempGroup.add(group);
             }
         }

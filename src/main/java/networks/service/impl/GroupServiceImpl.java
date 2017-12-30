@@ -30,7 +30,7 @@ public class GroupServiceImpl implements GroupService {
 //        file.createNewFile();
         BufferedWriter writer = new BufferedWriter(new FileWriter(file, true));
 
-        writer.write("1. Name of group: " + group.getByNameOfGroup() + "\n");
+        writer.write("1. Name of group: " + group.getNameOfGroup() + "\n");
         writer.write("2. Admin: " + group.getAdmin() + "\n");
         writer.write("3. Description: " + group.getDescription() + "\n");
         writer.write("3. Number of followers: " + group.getNumberOfFollowers() + "\n");

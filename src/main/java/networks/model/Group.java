@@ -1,5 +1,13 @@
 package networks.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+@ToString
 public class Group {
 
     private String nameOfGroup;
@@ -14,45 +22,4 @@ public class Group {
         this.numberOfFollowers = numberOfFollowers;
     }
 
-    public String getByNameOfGroup() {
-        return nameOfGroup;
-    }
-
-    public void setNameOfGroup(String nameOfGroup) {
-        this.nameOfGroup = nameOfGroup;
-    }
-
-    public String getAdmin() {
-        return admin;
-    }
-
-    public void setAdmin(String admin) {
-        this.admin = admin;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public int getNumberOfFollowers() {
-        return numberOfFollowers;
-    }
-
-    public void setNumberOfFollowers(int numberOfFollowers) {
-        this.numberOfFollowers = numberOfFollowers;
-    }
-
-    @Override
-    public String toString() {
-        return "Group{" +
-                "nameOfGroup='" + nameOfGroup + '\'' +
-                ", admin='" + admin + '\'' +
-                ", description='" + description + '\'' +
-                ", numberOfFollowers=" + numberOfFollowers +
-                '}';
-    }
 }

@@ -16,10 +16,10 @@ public class AllowPrintMain {
         Method methodFour = allowPrintMainClass.getDeclaredMethod("four");
         Method methodFive = allowPrintMainClass.getDeclaredMethod("five");
         boolean annotationPresentOne = methodOne.isAnnotationPresent(AllowPrint.class);
-        boolean annotationPresentTwo = methodOne.isAnnotationPresent(AllowPrint.class);
-        boolean annotationPresentThree = methodOne.isAnnotationPresent(AllowPrint.class);
-        boolean annotationPresentFour = methodOne.isAnnotationPresent(AllowPrint.class);
-        boolean annotationPresentFive = methodOne.isAnnotationPresent(AllowPrint.class);
+        boolean annotationPresentTwo = methodTwo.isAnnotationPresent(AllowPrint.class);
+        boolean annotationPresentThree = methodThree.isAnnotationPresent(AllowPrint.class);
+        boolean annotationPresentFour = methodFour.isAnnotationPresent(AllowPrint.class);
+        boolean annotationPresentFive = methodFive.isAnnotationPresent(AllowPrint.class);
 
         if (annotationPresentOne) {
             one();
@@ -32,13 +32,31 @@ public class AllowPrintMain {
         } else {
             throw new DoNotPrintException();
         }
+
+        if (annotationPresentThree) {
+            three();
+        } else {
+            throw new DoNotPrintException();
+        }
+
+        if (annotationPresentFour) {
+            four();
+        } else {
+            throw new DoNotPrintException();
+        }
+
+        if (annotationPresentFive) {
+            five();
+        } else {
+            throw new DoNotPrintException();
+        }
     }
 
     @AllowPrint
     private static void five() throws NoSuchMethodException {
         AllowPrintMain allowPrintMain = new AllowPrintMain();
         Class<? extends AllowPrintMain> allowPrintMainClass = allowPrintMain.getClass();
-        Method methodFive = allowPrintMainClass.getDeclaredMethod("two");
+        Method methodFive = allowPrintMainClass.getDeclaredMethod("five");
         System.out.println(methodFive.getName());
     }
 
@@ -46,7 +64,7 @@ public class AllowPrintMain {
     private static void four() throws NoSuchMethodException {
         AllowPrintMain allowPrintMain = new AllowPrintMain();
         Class<? extends AllowPrintMain> allowPrintMainClass = allowPrintMain.getClass();
-        Method methodFour = allowPrintMainClass.getDeclaredMethod("two");
+        Method methodFour = allowPrintMainClass.getDeclaredMethod("four");
         System.out.println(methodFour.getName());
     }
 
@@ -54,7 +72,7 @@ public class AllowPrintMain {
     private static void three() throws NoSuchMethodException {
         AllowPrintMain allowPrintMain = new AllowPrintMain();
         Class<? extends AllowPrintMain> allowPrintMainClass = allowPrintMain.getClass();
-        Method methodThree = allowPrintMainClass.getDeclaredMethod("two");
+        Method methodThree = allowPrintMainClass.getDeclaredMethod("three");
         System.out.println(methodThree.getName());
 
     }
