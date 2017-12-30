@@ -1,6 +1,6 @@
 package networks.dao.impl;
 
-import networks.Exception.NoUserFoundException;
+import networks.exception.NoUserFoundException;
 import networks.dao.UserDao;
 import networks.data.Database;
 import networks.model.User;

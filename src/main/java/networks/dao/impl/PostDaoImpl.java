@@ -1,6 +1,6 @@
 package networks.dao.impl;
 
-import networks.Exception.NoPostFoundException;
+import networks.exception.NoPostFoundException;
 import networks.dao.PostDao;
 import networks.data.Database;
 import networks.model.Post;

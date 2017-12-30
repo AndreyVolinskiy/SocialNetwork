@@ -1,4 +1,4 @@
-package trainings.HomeworkExceptions;
+package trainings.homeworkExceptions;
 
 class Exceptions {
 

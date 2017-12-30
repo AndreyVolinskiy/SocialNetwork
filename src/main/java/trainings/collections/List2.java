@@ -1,7 +1,6 @@
-package trainings.Collections;
+package trainings.collections;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class List2 {
 

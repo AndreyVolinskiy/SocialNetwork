@@ -3,14 +3,10 @@ package networks.controller;
 import networks.model.Post;
 import networks.service.PostService;
 import networks.service.factory.ServiceFactory;
-import networks.service.impl.PostServiceImpl;
 
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
-
-import static com.sun.corba.se.spi.orbutil.proxy.DelegateInvocationHandlerImpl.create;
 
 public class PostController {
 

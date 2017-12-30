@@ -1,5 +1,5 @@
 
-package trainings.HomeworkExceptions;
+package trainings.homeworkExceptions;
 public class Url {
 
     private String protocol;

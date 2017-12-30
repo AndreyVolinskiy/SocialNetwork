@@ -1,6 +1,6 @@
 package networks.dao.impl;
 
-import networks.Exception.NoGroupFoundException;
+import networks.exception.NoGroupFoundException;
 import networks.dao.GroupDao;
 import networks.data.Database;
 import networks.model.Group;

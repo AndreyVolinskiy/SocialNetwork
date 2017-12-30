@@ -1,4 +1,4 @@
-package trainings.Exceptions;
+package trainings.exceptions;
 
 public class Exception3 {
 
