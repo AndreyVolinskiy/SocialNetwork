@@ -8,8 +8,6 @@ public class NewClass {
 
     public static void main(String[] args) throws NoSuchMethodException {
 
-        NewClass newClass1 = new NewClass();
-
         NewClass newClass = new NewClass();
         Class<? extends NewClass> clazz = newClass.getClass();
 
