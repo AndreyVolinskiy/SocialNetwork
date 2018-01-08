@@ -1,4 +1,4 @@
-package trainings.homeworkExceptions;
+package trainings.exceptions.homeworkExceptions;
 
 import java.util.LinkedList;
 import java.util.List;

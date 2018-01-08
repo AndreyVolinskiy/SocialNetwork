@@ -17,13 +17,14 @@ public class ConsoleToFile {
         String text;
         final String filePath = "src\\main\\resources\\fromConsole.txt";
         File file = new File(filePath);
-        if (new File(filePath).exists()) {
+        if (file.exists()) {
             file.delete();
             file.createNewFile();
         }
-        FileWriter fileWriter = new FileWriter(file, true);
-        Scanner scanner = new Scanner(System.in);
+        FileWriter writer = new FileWriter(file, true);
 
+
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the text, Stop to break: ");
 
         while (true) {
@@ -31,14 +32,14 @@ public class ConsoleToFile {
             if (text.equals("Stop")) {
                 break;
             } else {
-                fileWriter.write(text);
-                fileWriter.write("\n");
+                writer.write(text);
+                writer.write("\n");
             }
 
         }
         scanner.close();
-        fileWriter.flush();
-        fileWriter.close();
+        writer.flush();
+        writer.close();
 
     }
 }

@@ -19,10 +19,6 @@ public class User {
     private int age;
     private LocalDate birthday;
 
-    public LocalDate getBirthday() {
-        return birthday;
-    }
-
     public User(String name, String email, String password, Status status, int age, LocalDate birthday) {
         this.name = name;
         this.email = email;

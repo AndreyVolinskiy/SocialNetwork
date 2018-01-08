@@ -1,0 +1,1444 @@
+field: ANNOTATION
+field is final
+field is private
+field is static
+
+field: ENUM
+field is final
+field is private
+field is static
+
+field: SYNTHETIC
+field is final
+field is private
+field is static
+
+field: cachedConstructor
+field is private
+
+field: newInstanceCallerCache
+field is private
+
+field: name
+field is private
+
+field: allPermDomain
+field is private
+field is static
+
+field: useCaches
+field is private
+field is static
+
+field: reflectionData
+field is private
+
+field: classRedefinedCount
+field is private
+
+field: genericInfo
+field is private
+
+field: serialVersionUID
+field is final
+field is private
+field is static
+
+field: serialPersistentFields
+field is final
+field is private
+field is static
+
+field: reflectionFactory
+field is private
+field is static
+
+field: initted
+field is private
+field is static
+
+field: enumConstants
+field is private
+
+field: enumConstantDirectory
+field is private
+
+field: annotationData
+field is private
+
+field: annotationType
+field is private
+
+field: classValueMap
+
+
+method: checkPackageAccess
+method is private
+default value: null
+parameter types: [class java.lang.ClassLoader, boolean]
+
+method: forName
+method is public
+method is static
+default value: null
+parameter types: [class java.lang.String]
+
+method: forName
+method is public
+method is static
+default value: null
+parameter types: [class java.lang.String, boolean, class java.lang.ClassLoader]
+
+method: forName0
+method is private
+method is static
+default value: null
+parameter types: [class java.lang.String, boolean, class java.lang.ClassLoader, class java.lang.Class]
+
+method: toString
+method is public
+default value: null
+parameter types: []
+
+method: getProtectionDomain
+method is public
+default value: null
+parameter types: []
+
+method: isAssignableFrom
+method is public
+default value: null
+parameter types: [class java.lang.Class]
+
+method: isInstance
+method is public
+default value: null
+parameter types: [class java.lang.Object]
+
+method: getModifiers
+method is public
+default value: null
+parameter types: []
+
+method: isInterface
+method is public
+default value: null
+parameter types: []
+
+method: isArray
+method is public
+default value: null
+parameter types: []
+
+method: isPrimitive
+method is public
+default value: null
+parameter types: []
+
+method: getSuperclass
+method is public
+default value: null
+parameter types: []
+
+method: getComponentType
+method is public
+default value: null
+parameter types: []
+
+method: getName
+method is public
+default value: null
+parameter types: []
+
+method: registerNatives
+method is private
+method is static
+default value: null
+parameter types: []
+
+method: access$100
+method is static
+default value: null
+parameter types: [class java.lang.Class, boolean]
+
+method: access$200
+method is static
+default value: null
+parameter types: [class [Ljava.lang.reflect.Field;, class java.lang.String]
+
+method: access$300
+method is static
+default value: null
+parameter types: [class [Ljava.lang.Object;, class [Ljava.lang.Object;]
+
+method: access$402
+method is static
+default value: null
+parameter types: [boolean]
+
+method: access$502
+method is static
+default value: null
+parameter types: [boolean]
+
+method: addAll
+method is private
+method is static
+default value: null
+parameter types: [interface java.util.Collection, class [Ljava.lang.reflect.Field;]
+
+method: annotationData
+method is private
+default value: null
+parameter types: []
+
+method: argumentTypesToString
+method is private
+method is static
+default value: null
+parameter types: [class [Ljava.lang.Class;]
+
+method: arrayContentsEq
+method is private
+method is static
+default value: null
+parameter types: [class [Ljava.lang.Object;, class [Ljava.lang.Object;]
+
+method: asSubclass
+method is public
+default value: null
+parameter types: [class java.lang.Class]
+
+method: cannotCastMsg
+method is private
+default value: null
+parameter types: [class java.lang.Object]
+
+method: casAnnotationType
+default value: null
+parameter types: [class sun.reflect.annotation.AnnotationType, class sun.reflect.annotation.AnnotationType]
+
+method: cast
+method is public
+default value: null
+parameter types: [class java.lang.Object]
+
+method: checkInitted
+method is private
+method is static
+default value: null
+parameter types: []
+
+method: checkMemberAccess
+method is private
+default value: null
+parameter types: [int, class java.lang.Class, boolean]
+
+method: copyConstructors
+method is private
+method is static
+default value: null
+parameter types: [class [Ljava.lang.reflect.Constructor;]
+
+method: copyFields
+method is private
+method is static
+default value: null
+parameter types: [class [Ljava.lang.reflect.Field;]
+
+method: copyMethods
+method is private
+method is static
+default value: null
+parameter types: [class [Ljava.lang.reflect.Method;]
+
+method: createAnnotationData
+method is private
+default value: null
+parameter types: [int]
+
+method: desiredAssertionStatus
+method is public
+default value: null
+parameter types: []
+
+method: desiredAssertionStatus0
+method is private
+method is static
+default value: null
+parameter types: [class java.lang.Class]
+
+method: enumConstantDirectory
+default value: null
+parameter types: []
+
+method: getAnnotatedInterfaces
+method is public
+default value: null
+parameter types: []
+
+method: getAnnotatedSuperclass
+method is public
+default value: null
+parameter types: []
+
+method: getAnnotation
+method is public
+default value: null
+parameter types: [class java.lang.Class]
+
+method: getAnnotationType
+default value: null
+parameter types: []
+
+method: getAnnotations
+method is public
+default value: null
+parameter types: []
+
+method: getAnnotationsByType
+method is public
+default value: null
+parameter types: [class java.lang.Class]
+
+method: getCanonicalName
+method is public
+default value: null
+parameter types: []
+
+method: getClassLoader
+method is public
+default value: null
+parameter types: []
+
+method: getClassLoader0
+default value: null
+parameter types: []
+
+method: getClasses
+method is public
+default value: null
+parameter types: []
+
+method: getConstantPool
+default value: null
+parameter types: []
+
+method: getConstructor
+method is public
+default value: null
+parameter types: [class [Ljava.lang.Class;]
+
+method: getConstructor0
+method is private
+default value: null
+parameter types: [class [Ljava.lang.Class;, int]
+
+method: getConstructors
+method is public
+default value: null
+parameter types: []
+
+method: getDeclaredAnnotation
+method is public
+default value: null
+parameter types: [class java.lang.Class]
+
+method: getDeclaredAnnotationMap
+default value: null
+parameter types: []
+
+method: getDeclaredAnnotations
+method is public
+default value: null
+parameter types: []
+
+method: getDeclaredAnnotationsByType
+method is public
+default value: null
+parameter types: [class java.lang.Class]
+
+method: getDeclaredClasses
+method is public
+default value: null
+parameter types: []
+
+method: getDeclaredClasses0
+method is private
+default value: null
+parameter types: []
+
+method: getDeclaredConstructor
+method is public
+default value: null
+parameter types: [class [Ljava.lang.Class;]
+
+method: getDeclaredConstructors
+method is public
+default value: null
+parameter types: []
+
+method: getDeclaredConstructors0
+method is private
+default value: null
+parameter types: [boolean]
+
+method: getDeclaredField
+method is public
+default value: null
+parameter types: [class java.lang.String]
+
+method: getDeclaredFields
+method is public
+default value: null
+parameter types: []
+
+method: getDeclaredFields0
+method is private
+default value: null
+parameter types: [boolean]
+
+method: getDeclaredMethod
+method is public
+default value: null
+parameter types: [class java.lang.String, class [Ljava.lang.Class;]
+
+method: getDeclaredMethods
+method is public
+default value: null
+parameter types: []
+
+method: getDeclaredMethods0
+method is private
+default value: null
+parameter types: [boolean]
+
+method: getDeclaringClass
+method is public
+default value: null
+parameter types: []
+
+method: getDeclaringClass0
+method is private
+default value: null
+parameter types: []
+
+method: getEnclosingClass
+method is public
+default value: null
+parameter types: []
+
+method: getEnclosingConstructor
+method is public
+default value: null
+parameter types: []
+
+method: getEnclosingMethod
+method is public
+default value: null
+parameter types: []
+
+method: getEnclosingMethod0
+method is private
+default value: null
+parameter types: []
+
+method: getEnclosingMethodInfo
+method is private
+default value: null
+parameter types: []
+
+method: getEnumConstants
+method is public
+default value: null
+parameter types: []
+
+method: getEnumConstantsShared
+default value: null
+parameter types: []
+
+method: getExecutableTypeAnnotationBytes
+method is static
+default value: null
+parameter types: [class java.lang.reflect.Executable]
+
+method: getFactory
+method is private
+default value: null
+parameter types: []
+
+method: getField
+method is public
+default value: null
+parameter types: [class java.lang.String]
+
+method: getField0
+method is private
+default value: null
+parameter types: [class java.lang.String]
+
+method: getFields
+method is public
+default value: null
+parameter types: []
+
+method: getGenericInfo
+method is private
+default value: null
+parameter types: []
+
+method: getGenericInterfaces
+method is public
+default value: null
+parameter types: []
+
+method: getGenericSignature0
+method is private
+default value: null
+parameter types: []
+
+method: getGenericSuperclass
+method is public
+default value: null
+parameter types: []
+
+method: getInterfaces
+method is public
+default value: null
+parameter types: []
+
+method: getInterfaces0
+method is private
+default value: null
+parameter types: []
+
+method: getMethod
+method is public
+default value: null
+parameter types: [class java.lang.String, class [Ljava.lang.Class;]
+
+method: getMethod0
+method is private
+default value: null
+parameter types: [class java.lang.String, class [Ljava.lang.Class;, boolean]
+
+method: getMethods
+method is public
+default value: null
+parameter types: []
+
+method: getName0
+method is private
+default value: null
+parameter types: []
+
+method: getPackage
+method is public
+default value: null
+parameter types: []
+
+method: getPrimitiveClass
+method is static
+default value: null
+parameter types: [class java.lang.String]
+
+method: getProtectionDomain0
+method is private
+default value: null
+parameter types: []
+
+method: getRawAnnotations
+default value: null
+parameter types: []
+
+method: getRawTypeAnnotations
+default value: null
+parameter types: []
+
+method: getReflectionFactory
+method is private
+method is static
+default value: null
+parameter types: []
+
+method: getResource
+method is public
+default value: null
+parameter types: [class java.lang.String]
+
+method: getResourceAsStream
+method is public
+default value: null
+parameter types: [class java.lang.String]
+
+method: getSigners
+method is public
+default value: null
+parameter types: []
+
+method: getSimpleBinaryName
+method is private
+default value: null
+parameter types: []
+
+method: getSimpleName
+method is public
+default value: null
+parameter types: []
+
+method: getTypeName
+method is public
+default value: null
+parameter types: []
+
+method: getTypeParameters
+method is public
+default value: null
+parameter types: []
+
+method: isAnnotation
+method is public
+default value: null
+parameter types: []
+
+method: isAnnotationPresent
+method is public
+default value: null
+parameter types: [class java.lang.Class]
+
+method: isAnonymousClass
+method is public
+default value: null
+parameter types: []
+
+method: isAsciiDigit
+method is private
+method is static
+default value: null
+parameter types: [char]
+
+method: isEnum
+method is public
+default value: null
+parameter types: []
+
+method: isLocalClass
+method is public
+default value: null
+parameter types: []
+
+method: isLocalOrAnonymousClass
+method is private
+default value: null
+parameter types: []
+
+method: isMemberClass
+method is public
+default value: null
+parameter types: []
+
+method: isSynthetic
+method is public
+default value: null
+parameter types: []
+
+method: newInstance
+method is public
+default value: null
+parameter types: []
+
+method: newReflectionData
+method is private
+default value: null
+parameter types: [class java.lang.ref.SoftReference, int]
+
+method: privateGetDeclaredConstructors
+method is private
+default value: null
+parameter types: [boolean]
+
+method: privateGetDeclaredFields
+method is private
+default value: null
+parameter types: [boolean]
+
+method: privateGetDeclaredMethods
+method is private
+default value: null
+parameter types: [boolean]
+
+method: privateGetMethodRecursive
+method is private
+default value: null
+parameter types: [class java.lang.String, class [Ljava.lang.Class;, boolean, class java.lang.Class$MethodArray]
+
+method: privateGetPublicFields
+method is private
+default value: null
+parameter types: [interface java.util.Set]
+
+method: privateGetPublicMethods
+method is private
+default value: null
+parameter types: []
+
+method: reflectionData
+method is private
+default value: null
+parameter types: []
+
+method: resolveName
+method is private
+default value: null
+parameter types: [class java.lang.String]
+
+method: searchFields
+method is private
+method is static
+default value: null
+parameter types: [class [Ljava.lang.reflect.Field;, class java.lang.String]
+
+method: searchMethods
+method is private
+method is static
+default value: null
+parameter types: [class [Ljava.lang.reflect.Method;, class java.lang.String, class [Ljava.lang.Class;]
+
+method: setSigners
+default value: null
+parameter types: [class [Ljava.lang.Object;]
+
+method: toClass
+method is private
+method is static
+default value: null
+parameter types: [interface java.lang.reflect.Type]
+
+method: toGenericString
+method is public
+default value: null
+parameter types: []
+
+constructor: java.lang.Class
+field: ANNOTATION
+field is final
+field is private
+field is static
+
+field: ENUM
+field is final
+field is private
+field is static
+
+field: SYNTHETIC
+field is final
+field is private
+field is static
+
+field: cachedConstructor
+field is private
+
+field: newInstanceCallerCache
+field is private
+
+field: name
+field is private
+
+field: allPermDomain
+field is private
+field is static
+
+field: useCaches
+field is private
+field is static
+
+field: reflectionData
+field is private
+
+field: classRedefinedCount
+field is private
+
+field: genericInfo
+field is private
+
+field: serialVersionUID
+field is final
+field is private
+field is static
+
+field: serialPersistentFields
+field is final
+field is private
+field is static
+
+field: reflectionFactory
+field is private
+field is static
+
+field: initted
+field is private
+field is static
+
+field: enumConstants
+field is private
+
+field: enumConstantDirectory
+field is private
+
+field: annotationData
+field is private
+
+field: annotationType
+field is private
+
+field: classValueMap
+
+
+method: checkPackageAccess
+method is private
+default value: null
+parameter types: [class java.lang.ClassLoader, boolean]
+
+method: forName
+method is public
+method is static
+default value: null
+parameter types: [class java.lang.String]
+
+method: forName
+method is public
+method is static
+default value: null
+parameter types: [class java.lang.String, boolean, class java.lang.ClassLoader]
+
+method: forName0
+method is private
+method is static
+default value: null
+parameter types: [class java.lang.String, boolean, class java.lang.ClassLoader, class java.lang.Class]
+
+method: toString
+method is public
+default value: null
+parameter types: []
+
+method: getProtectionDomain
+method is public
+default value: null
+parameter types: []
+
+method: isAssignableFrom
+method is public
+default value: null
+parameter types: [class java.lang.Class]
+
+method: isInstance
+method is public
+default value: null
+parameter types: [class java.lang.Object]
+
+method: getModifiers
+method is public
+default value: null
+parameter types: []
+
+method: isInterface
+method is public
+default value: null
+parameter types: []
+
+method: isArray
+method is public
+default value: null
+parameter types: []
+
+method: isPrimitive
+method is public
+default value: null
+parameter types: []
+
+method: getSuperclass
+method is public
+default value: null
+parameter types: []
+
+method: getComponentType
+method is public
+default value: null
+parameter types: []
+
+method: getName
+method is public
+default value: null
+parameter types: []
+
+method: registerNatives
+method is private
+method is static
+default value: null
+parameter types: []
+
+method: access$100
+method is static
+default value: null
+parameter types: [class java.lang.Class, boolean]
+
+method: access$200
+method is static
+default value: null
+parameter types: [class [Ljava.lang.reflect.Field;, class java.lang.String]
+
+method: access$300
+method is static
+default value: null
+parameter types: [class [Ljava.lang.Object;, class [Ljava.lang.Object;]
+
+method: access$402
+method is static
+default value: null
+parameter types: [boolean]
+
+method: access$502
+method is static
+default value: null
+parameter types: [boolean]
+
+method: addAll
+method is private
+method is static
+default value: null
+parameter types: [interface java.util.Collection, class [Ljava.lang.reflect.Field;]
+
+method: annotationData
+method is private
+default value: null
+parameter types: []
+
+method: argumentTypesToString
+method is private
+method is static
+default value: null
+parameter types: [class [Ljava.lang.Class;]
+
+method: arrayContentsEq
+method is private
+method is static
+default value: null
+parameter types: [class [Ljava.lang.Object;, class [Ljava.lang.Object;]
+
+method: asSubclass
+method is public
+default value: null
+parameter types: [class java.lang.Class]
+
+method: cannotCastMsg
+method is private
+default value: null
+parameter types: [class java.lang.Object]
+
+method: casAnnotationType
+default value: null
+parameter types: [class sun.reflect.annotation.AnnotationType, class sun.reflect.annotation.AnnotationType]
+
+method: cast
+method is public
+default value: null
+parameter types: [class java.lang.Object]
+
+method: checkInitted
+method is private
+method is static
+default value: null
+parameter types: []
+
+method: checkMemberAccess
+method is private
+default value: null
+parameter types: [int, class java.lang.Class, boolean]
+
+method: copyConstructors
+method is private
+method is static
+default value: null
+parameter types: [class [Ljava.lang.reflect.Constructor;]
+
+method: copyFields
+method is private
+method is static
+default value: null
+parameter types: [class [Ljava.lang.reflect.Field;]
+
+method: copyMethods
+method is private
+method is static
+default value: null
+parameter types: [class [Ljava.lang.reflect.Method;]
+
+method: createAnnotationData
+method is private
+default value: null
+parameter types: [int]
+
+method: desiredAssertionStatus
+method is public
+default value: null
+parameter types: []
+
+method: desiredAssertionStatus0
+method is private
+method is static
+default value: null
+parameter types: [class java.lang.Class]
+
+method: enumConstantDirectory
+default value: null
+parameter types: []
+
+method: getAnnotatedInterfaces
+method is public
+default value: null
+parameter types: []
+
+method: getAnnotatedSuperclass
+method is public
+default value: null
+parameter types: []
+
+method: getAnnotation
+method is public
+default value: null
+parameter types: [class java.lang.Class]
+
+method: getAnnotationType
+default value: null
+parameter types: []
+
+method: getAnnotations
+method is public
+default value: null
+parameter types: []
+
+method: getAnnotationsByType
+method is public
+default value: null
+parameter types: [class java.lang.Class]
+
+method: getCanonicalName
+method is public
+default value: null
+parameter types: []
+
+method: getClassLoader
+method is public
+default value: null
+parameter types: []
+
+method: getClassLoader0
+default value: null
+parameter types: []
+
+method: getClasses
+method is public
+default value: null
+parameter types: []
+
+method: getConstantPool
+default value: null
+parameter types: []
+
+method: getConstructor
+method is public
+default value: null
+parameter types: [class [Ljava.lang.Class;]
+
+method: getConstructor0
+method is private
+default value: null
+parameter types: [class [Ljava.lang.Class;, int]
+
+method: getConstructors
+method is public
+default value: null
+parameter types: []
+
+method: getDeclaredAnnotation
+method is public
+default value: null
+parameter types: [class java.lang.Class]
+
+method: getDeclaredAnnotationMap
+default value: null
+parameter types: []
+
+method: getDeclaredAnnotations
+method is public
+default value: null
+parameter types: []
+
+method: getDeclaredAnnotationsByType
+method is public
+default value: null
+parameter types: [class java.lang.Class]
+
+method: getDeclaredClasses
+method is public
+default value: null
+parameter types: []
+
+method: getDeclaredClasses0
+method is private
+default value: null
+parameter types: []
+
+method: getDeclaredConstructor
+method is public
+default value: null
+parameter types: [class [Ljava.lang.Class;]
+
+method: getDeclaredConstructors
+method is public
+default value: null
+parameter types: []
+
+method: getDeclaredConstructors0
+method is private
+default value: null
+parameter types: [boolean]
+
+method: getDeclaredField
+method is public
+default value: null
+parameter types: [class java.lang.String]
+
+method: getDeclaredFields
+method is public
+default value: null
+parameter types: []
+
+method: getDeclaredFields0
+method is private
+default value: null
+parameter types: [boolean]
+
+method: getDeclaredMethod
+method is public
+default value: null
+parameter types: [class java.lang.String, class [Ljava.lang.Class;]
+
+method: getDeclaredMethods
+method is public
+default value: null
+parameter types: []
+
+method: getDeclaredMethods0
+method is private
+default value: null
+parameter types: [boolean]
+
+method: getDeclaringClass
+method is public
+default value: null
+parameter types: []
+
+method: getDeclaringClass0
+method is private
+default value: null
+parameter types: []
+
+method: getEnclosingClass
+method is public
+default value: null
+parameter types: []
+
+method: getEnclosingConstructor
+method is public
+default value: null
+parameter types: []
+
+method: getEnclosingMethod
+method is public
+default value: null
+parameter types: []
+
+method: getEnclosingMethod0
+method is private
+default value: null
+parameter types: []
+
+method: getEnclosingMethodInfo
+method is private
+default value: null
+parameter types: []
+
+method: getEnumConstants
+method is public
+default value: null
+parameter types: []
+
+method: getEnumConstantsShared
+default value: null
+parameter types: []
+
+method: getExecutableTypeAnnotationBytes
+method is static
+default value: null
+parameter types: [class java.lang.reflect.Executable]
+
+method: getFactory
+method is private
+default value: null
+parameter types: []
+
+method: getField
+method is public
+default value: null
+parameter types: [class java.lang.String]
+
+method: getField0
+method is private
+default value: null
+parameter types: [class java.lang.String]
+
+method: getFields
+method is public
+default value: null
+parameter types: []
+
+method: getGenericInfo
+method is private
+default value: null
+parameter types: []
+
+method: getGenericInterfaces
+method is public
+default value: null
+parameter types: []
+
+method: getGenericSignature0
+method is private
+default value: null
+parameter types: []
+
+method: getGenericSuperclass
+method is public
+default value: null
+parameter types: []
+
+method: getInterfaces
+method is public
+default value: null
+parameter types: []
+
+method: getInterfaces0
+method is private
+default value: null
+parameter types: []
+
+method: getMethod
+method is public
+default value: null
+parameter types: [class java.lang.String, class [Ljava.lang.Class;]
+
+method: getMethod0
+method is private
+default value: null
+parameter types: [class java.lang.String, class [Ljava.lang.Class;, boolean]
+
+method: getMethods
+method is public
+default value: null
+parameter types: []
+
+method: getName0
+method is private
+default value: null
+parameter types: []
+
+method: getPackage
+method is public
+default value: null
+parameter types: []
+
+method: getPrimitiveClass
+method is static
+default value: null
+parameter types: [class java.lang.String]
+
+method: getProtectionDomain0
+method is private
+default value: null
+parameter types: []
+
+method: getRawAnnotations
+default value: null
+parameter types: []
+
+method: getRawTypeAnnotations
+default value: null
+parameter types: []
+
+method: getReflectionFactory
+method is private
+method is static
+default value: null
+parameter types: []
+
+method: getResource
+method is public
+default value: null
+parameter types: [class java.lang.String]
+
+method: getResourceAsStream
+method is public
+default value: null
+parameter types: [class java.lang.String]
+
+method: getSigners
+method is public
+default value: null
+parameter types: []
+
+method: getSimpleBinaryName
+method is private
+default value: null
+parameter types: []
+
+method: getSimpleName
+method is public
+default value: null
+parameter types: []
+
+method: getTypeName
+method is public
+default value: null
+parameter types: []
+
+method: getTypeParameters
+method is public
+default value: null
+parameter types: []
+
+method: isAnnotation
+method is public
+default value: null
+parameter types: []
+
+method: isAnnotationPresent
+method is public
+default value: null
+parameter types: [class java.lang.Class]
+
+method: isAnonymousClass
+method is public
+default value: null
+parameter types: []
+
+method: isAsciiDigit
+method is private
+method is static
+default value: null
+parameter types: [char]
+
+method: isEnum
+method is public
+default value: null
+parameter types: []
+
+method: isLocalClass
+method is public
+default value: null
+parameter types: []
+
+method: isLocalOrAnonymousClass
+method is private
+default value: null
+parameter types: []
+
+method: isMemberClass
+method is public
+default value: null
+parameter types: []
+
+method: isSynthetic
+method is public
+default value: null
+parameter types: []
+
+method: newInstance
+method is public
+default value: null
+parameter types: []
+
+method: newReflectionData
+method is private
+default value: null
+parameter types: [class java.lang.ref.SoftReference, int]
+
+method: privateGetDeclaredConstructors
+method is private
+default value: null
+parameter types: [boolean]
+
+method: privateGetDeclaredFields
+method is private
+default value: null
+parameter types: [boolean]
+
+method: privateGetDeclaredMethods
+method is private
+default value: null
+parameter types: [boolean]
+
+method: privateGetMethodRecursive
+method is private
+default value: null
+parameter types: [class java.lang.String, class [Ljava.lang.Class;, boolean, class java.lang.Class$MethodArray]
+
+method: privateGetPublicFields
+method is private
+default value: null
+parameter types: [interface java.util.Set]
+
+method: privateGetPublicMethods
+method is private
+default value: null
+parameter types: []
+
+method: reflectionData
+method is private
+default value: null
+parameter types: []
+
+method: resolveName
+method is private
+default value: null
+parameter types: [class java.lang.String]
+
+method: searchFields
+method is private
+method is static
+default value: null
+parameter types: [class [Ljava.lang.reflect.Field;, class java.lang.String]
+
+method: searchMethods
+method is private
+method is static
+default value: null
+parameter types: [class [Ljava.lang.reflect.Method;, class java.lang.String, class [Ljava.lang.Class;]
+
+method: setSigners
+default value: null
+parameter types: [class [Ljava.lang.Object;]
+
+method: toClass
+method is private
+method is static
+default value: null
+parameter types: [interface java.lang.reflect.Type]
+
+method: toGenericString
+method is public
+default value: null
+parameter types: []
+
+constructor: java.lang.Class

@@ -1,4 +1,4 @@
-package trainings.homeworkExceptions;
+package trainings.exceptions.homeworkExceptions;
 
 import java.util.List;
 import java.util.Scanner;
