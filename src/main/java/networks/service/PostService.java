@@ -7,7 +7,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
 
-public interface PostService {
+public interface PostService extends CrudService<Post>{
 
     List<Post> getAll();
 

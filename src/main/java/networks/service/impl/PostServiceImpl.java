@@ -3,6 +3,7 @@ package networks.service.impl;
 import networks.dao.PostDao;
 import networks.dao.factory.DaoFactory;
 import networks.dao.impl.PostDaoImpl;
+import networks.model.AbstractEntity;
 import networks.model.Post;
 import networks.service.PostService;
 
@@ -51,5 +52,24 @@ public class PostServiceImpl implements PostService {
 
     }
 
+    @Override
+    public void update(Post entity) {
+
+    }
+
+    @Override
+    public void create(Post entity) {
+
+    }
+
+    @Override
+    public void delete(long id) {
+
+    }
+
+    @Override
+    public List findAll() {
+        return null;
+    }
 }
 

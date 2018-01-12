@@ -7,7 +7,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class Post {
+public class Post extends AbstractEntity{
 
     private String title;
     private String description;

@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.time.LocalDate;
 import java.util.List;
 
-public interface UserService {
+public interface UserService extends CrudService<User>{
 
     List<User> getAll();
 
@@ -24,7 +24,7 @@ public interface UserService {
 
     void happyBirthday(User user, LocalDate localDate);
 
-    void create(User user) throws IOException;
+//    void create(User user) throws IOException;
 
     String encrypt(String strirg);
 

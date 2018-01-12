@@ -7,7 +7,9 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
 
-public interface GroupService {
+public interface GroupService
+//        extends CrudService<Group>
+ {
 
     List<Group> getAll();
 

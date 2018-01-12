@@ -7,7 +7,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class Group {
+public class Group extends AbstractEntity{
 
     private String nameOfGroup;
     private String admin;

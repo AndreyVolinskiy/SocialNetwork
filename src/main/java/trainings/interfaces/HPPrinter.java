@@ -1,4 +1,4 @@
-package trainings.interf;
+package trainings.interfaces;
 
 public class HPPrinter implements printer{
     @Override

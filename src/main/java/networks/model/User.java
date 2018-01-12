@@ -10,7 +10,7 @@ import java.time.LocalDate;
 @Getter
 @Setter
 @ToString
-public class User {
+public class User extends AbstractEntity{
 
     private String name;
     private String email;
