@@ -4,7 +4,7 @@ import networks.model.Post;
 
 import java.util.List;
 
-public interface PostDao {
+public interface PostDao extends CrudDao<Post>{
 
     List<Post> getAll();
 

@@ -24,8 +24,6 @@ public interface UserService extends CrudService<User>{
 
     void happyBirthday(User user, LocalDate localDate);
 
-//    void create(User user) throws IOException;
-
     String encrypt(String strirg);
 
     String decrypt(String strirg);

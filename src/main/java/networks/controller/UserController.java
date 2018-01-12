@@ -23,13 +23,13 @@ public class UserController {
         LocalDate birthday = LocalDate.of(1981, 1, 19);
         first.setBirthday(birthday);
 
-        try {
-            for (User user : userService.getAll()) {
-                ServiceFactory.getUserService().create(user);
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            for (User user : userService.getAll()) {
+//                ServiceFactory.getUserService().create(user);
+//            }
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
 
         String filePath = "src\\main\\resources\\users.txt";
         File file = new File(filePath);

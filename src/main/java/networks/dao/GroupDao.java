@@ -4,7 +4,7 @@ import networks.model.Group;
 
 import java.util.List;
 
-public interface GroupDao {
+public interface GroupDao extends CrudDao<Group>{
 
     List<Group> getAll();
 

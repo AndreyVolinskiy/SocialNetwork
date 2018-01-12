@@ -5,6 +5,7 @@ import networks.dao.UserDao;
 import networks.data.Database;
 import networks.model.User;
 
+import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -51,5 +52,25 @@ public class UserDaoImpl implements UserDao {
             }
         }
         return tempUser;
+    }
+
+    @Override
+    public void update(User user) {
+
+    }
+
+    @Override
+    public void create(User user) throws IOException {
+
+    }
+
+    @Override
+    public void delete(long id) {
+
+    }
+
+    @Override
+    public List<User> findAll() {
+        return null;
     }
 }

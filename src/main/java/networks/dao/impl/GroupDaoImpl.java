@@ -3,8 +3,10 @@ package networks.dao.impl;
 import networks.exception.NoGroupFoundException;
 import networks.dao.GroupDao;
 import networks.data.Database;
+import networks.model.AbstractEntity;
 import networks.model.Group;
 
+import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -27,5 +29,25 @@ public class GroupDaoImpl implements GroupDao {
             throw new NoGroupFoundException();
         }
         return tempGroup;
+    }
+
+    @Override
+    public void create(Group entity) throws IOException {
+
+    }
+
+    @Override
+    public void update(Group group) {
+
+    }
+
+    @Override
+    public void delete(long id) {
+
+    }
+
+    @Override
+    public List findAll() {
+        return null;
     }
 }

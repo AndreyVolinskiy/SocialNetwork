@@ -12,7 +12,7 @@ public class ObolonServeceImpl implements ObolonService {
 
     @Override
     public void save(Obolon type) {
-//        beer.setType(type);
+        beer.setType(type);
     }
 
     @Override

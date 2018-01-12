@@ -11,6 +11,7 @@ import java.io.*;
 import java.util.List;
 
 public class GroupServiceImpl implements GroupService {
+
     @Override
     public List<Group> getAll() {
         GroupDao groupDao = DaoFactory.getGroupDao();
@@ -24,23 +25,25 @@ public class GroupServiceImpl implements GroupService {
     }
 
     @Override
-    public void create(Group group) throws IOException {
-        String filePath = "src\\main\\resources\\groups.txt";
-        File file = new File(filePath);
-//        file.delete();
-//        file.createNewFile();
-        BufferedWriter writer = new BufferedWriter(new FileWriter(file, true));
-
-        writer.write("1. Name of group: " + group.getNameOfGroup() + "\n");
-        writer.write("2. Admin: " + group.getAdmin() + "\n");
-        writer.write("3. Description: " + group.getDescription() + "\n");
-        writer.write("3. Number of followers: " + group.getNumberOfFollowers() + "\n");
-        writer.write("\n");
-
-        writer.flush();
-        writer.close();
+    public void update(Group group) {
 
     }
+//
+//    @Override
+//    public void create(Group group) throws IOException {
+//        String filePath = "src\\main\\resources\\groups.txt";
+//        File file = new File(filePath);
+//        BufferedWriter writer = new BufferedWriter(new FileWriter(file, true));
+//
+//        writer.write("1. Name of group: " + group.getNameOfGroup() + "\n");
+//        writer.write("2. Admin: " + group.getAdmin() + "\n");
+//        writer.write("3. Description: " + group.getDescription() + "\n");
+//        writer.write("3. Number of followers: " + group.getNumberOfFollowers() + "\n");
+//        writer.write("\n");
+//
+//        writer.flush();
+//        writer.close();
+//    }
 
     @Override
     public void getAllFromFile(File file) throws IOException {
@@ -53,12 +56,7 @@ public class GroupServiceImpl implements GroupService {
     }
 
     @Override
-    public void update(AbstractEntity entity) {
-
-    }
-
-    @Override
-    public void create(AbstractEntity entity) {
+    public void create(Group entity) {
 
     }
 

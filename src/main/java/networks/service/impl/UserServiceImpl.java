@@ -67,10 +67,9 @@ public class UserServiceImpl implements UserService{
         }
 
     @Override
-    public void create(User user) throws IOException {
+    public void update(User entity) {
 
     }
-
 
 //    @Override
 //    public void create(User user) throws IOException {
@@ -121,12 +120,7 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public void update(AbstractEntity entity) {
-
-    }
-
-    @Override
-    public void create(AbstractEntity entity) {
+    public void create(User entity) {
 
     }
 
